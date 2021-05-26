@@ -52,13 +52,9 @@ function draw() {
     if(block2.isTouching(ball)){
         ball.shapeColor = "orange";
         //write code to set velocityX and velocityY of ball as 0
-        if(ball.x<0){
-            music.stop()
-            ball.velocityX = 5
-        } else if(ball.x>800){
-            musics.stop()
-            ball.velocityX = 5
-        }
+       music.stop()
+        ball.velocityX = 0
+         ball.velocityY = 0
     }
 
     //write code to bounce off ball from the block3
